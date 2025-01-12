@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign Up Form</h2>
+        <form id="signup-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <small class="error" id="nameError">Name is required.</small>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <small class="error" id="emailError">Enter a valid email.</small>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6">
+            <small class="error" id="passwordError">Password must be at least 6 characters long.</small>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
